@@ -11,7 +11,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-          <a class="navbar-brank text-uppercase" href="#">Site do Gato</a>
+          <a class="navbar-brand text-uppercase " href="#">Site do Gato</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -19,7 +19,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto w-100 justify-content-end">
               <li class="nav-item active">
-                <a class="nav-link" href="https://getbootstrap.com/docs/3.3/components/#navbar">página do gato<span class="sr-only"></span></a>
+                <a class="nav-link" href="https://getbootstrap.com/docs/3.3/components/#navbar">página do gato<span class="sr-only">(span para leitores de tela)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#gatos-do-dia">gatos do dia</a>
@@ -42,7 +42,7 @@
                 <a class="nav-link" href="#contato">contato</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disable" href="#">em breve</a>
+                <a class="nav-link disabled" href="#">em breve</a>
               </li>
             </ul>
           </div>
@@ -67,10 +67,10 @@
         </div>
       </div>
     </div>
-    <section class="">
-      <h1 class="">Página do gato</h1>
-      <img class="" src="http://placekitten.com/400/400" alt="imagem aleatória de gato">
-      <p class="">Eu não tenho nenhuma criatividade</p>
+    <section class="bg-light d-flex flex-column align-items-center pt-5 pb-5">
+      <h1 class="mt-5 mb-3 text-uppercase">Página do gato</h1>
+      <img class="rounded-circle img-fluid" src="http://placekitten.com/400/400" alt="imagem aleatória de gato">
+      <p class="pt-5 pb-1">Eu não tenho nenhuma criatividade</p>
       <p><a href="https://getbootstrap.com/docs/4.0/utilities/colors/">Um site fofinho</a></p>
     </section>
     <section class="bg-dark pt-5 pb-5 d-flex flex-column align-items-center" id="gatos-do-dia">
@@ -96,7 +96,7 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-        <p class=""><a href="https://getbootstrap.com/docs/4.0/components/carousel/">Embarque nesse carrossel</a></p>
+        <p class="pt-5"><a href="https://getbootstrap.com/docs/4.0/components/carousel/">Embarque nesse carrossel</a></p>
     </section>
     <section class="bg-secondary pb-3" id="depoimentos">
       <h2 class="text-white text-center pt-5 pb-5 text-uppercase">Depoimentos</h2>
@@ -135,45 +135,45 @@
         </div>
       </div>
     </section>
-    <section class="" id="contato">
-      <h3 class="">Contato</h3>
+    <section class="text-center p-5" id="contato">
+      <h3 class="text-uppercase">Contato</h3>
       <form action="https://getbootstrap.com/docs/4.0/components/forms/">
-        <div class="">
-          <div class="">
-            <div class="">
+        <div class="container d-flex flex-column align-items-center">
+          <div class="form-row col-md-8">
+            <div class="form-group col-md-12">
               <label for="form-nome">Nome</label>
-              <input type="text" class="" id="form-nome" placeholder="Insira seu nome">
+              <input type="text" class="form-control" id="form-nome" placeholder="Insira seu nome">
             </div>
-            <div class="">
+            <div class="form-group col-md-12">
               <label for="form-email">e-mail</label>
-              <input type="email" class="" id="form-email" placeholder="Insira seu e-mail">
+              <input type="email" class="form-control" id="form-email" placeholder="Insira seu e-mail">
             </div>
-            <div class=""></div>
-            <div class="">
+            <div class="col-md-2"></div>
+            <div class="form-group col-md-8">
               <label for="form-assunto">Assunto</label>
-              <select id="form-assunto" class="">
+              <select id="form-assunto" class="form-control">
                 <option selected>Escolha um assunto</option>
                 <option>Gatos</option>
                 <option>Outros gatos</option>
                 <option>Não tem outro assunto</option>
               </select>
             </div>
-            <div class=""></div>
-            <div class="">
+            <div class="col-md-2"></div>
+            <div class="form-group col-md-12">
               <label for="form-textmensagem">Mensagem</label>
-              <textarea type="text" class="" id="form-textmensagem"></textarea>
+              <textarea type="text" class="form-control" id="form-textmensagem"></textarea>
             </div>
           </div>
-          <div class="">
-            <button type="submit" class="">Enviar</button>
-            <button type="reset" class="">Resetar</button>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-danger">Resetar</button>
           </div>
         </div>
       </form>
     </section>
-    <footer class="">
-      <div class="">
-        <p class="">Copyleft | <a href="mailto:eita@email.com">Me manda um e-mail, uma carta de amor</a>!</p>
+    <footer class="bg-dark">
+      <div class="footer">
+        <p class="text-center text-white p-3">Copyleft | <a href="mailto:eita@email.com">Me manda um e-mail, uma carta de amor</a>!</p>
       </div>
     </footer>
 
